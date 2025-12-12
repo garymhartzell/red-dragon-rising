@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Red Dragon Rising - Mid World Weaponry{% endblock %}
+
+{% block content %}
+    <h1>Mid World Weaponry</h1>
+    
+    <p>You step into Mid World Weaponry, where blades hang in neat rows, each waiting to meet the hand of a warrior bold enough to wield it. The shopkeeper—seasoned but sharp—watches as newcomers eye the inventory, his gaze carrying the weight of countless transactions.</p>
+    
+    <p>Here, weapons are more than tools—they’re choices. A sword that cuts true, an axe that never falters, a dagger that moves faster than the eye. Some are new, gleaming with promise. Others bear faint marks of battle, sold back by fighters who either upgraded—or didn’t live long enough to use them again.</p>
+    
+    <p>You have {{ gold_hand }} gold on hand.</p>
+    
+    <p>What would you like to do next?</p>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <ul class="flashes">
+                {% for category, message in messages %}
+                    <li class="{{ category }}">{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+    <div class="button-group">
+        <a href="{{ url_for('weapon_shop_bp.buy_weapon_page_route') }}" class="button-link">Buy a weapon</a>
+        <a href="{{ url_for('weapon_shop_bp.sell_weapon_route') }}" class="button-link">Sell your weapon</a>
+        <a href="{{ url_for('view_stats') }}" class="button-link">View Stats</a>
+        <a href="{{ url_for('town_square') }}" class="button-link">Leave</a>
+    </div>
+{% endblock %}

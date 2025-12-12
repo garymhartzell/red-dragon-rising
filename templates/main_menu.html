@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Red Dragon Rising - Main Menu{% endblock %}
+
+{% block content %}
+    <h1>Red Dragon Rising</h1>
+    <div class="button-group">
+        <a href="{{ url_for('new_game') }}" class="button-link">Start New Game</a>
+        <a href="{{ url_for('resume_game') }}" class="button-link">Resume Game</a>
+        <a href="{{ url_for('exit_game') }}" class="button-link">Exit</a>
+    </div>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Red Dragon Rising - Goodbye{% endblock %}
+
+{% block content %}
+    <h1>Returning to the mundane world.</h1>
+    <p>Thank you for playing Red Dragon Rising!</p>
+    <div class="button-group">
+        <a href="{{ url_for('main_menu') }}" class="button-link">Return to Main Menu</a>
+    </div>
+{% endblock %}

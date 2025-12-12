@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Red Dragon Rising - Sell Weapon{% endblock %}
+
+{% block content %}
+    <h1>Mid World Weaponry - Sell Weapon</h1>
+    <p>You tell the shopkeeper that you wish to sell your {{ weapon_name }}. He takes it from you, looking it over thoughtfully.</p>
+    <p>"I can offer you {{ sell_price }} gold for this {{ weapon_name }}. Do we have a deal?"</p>
+
+    <div class="button-group">
+        <form action="{{ url_for('weapon_shop_bp.finalize_weapon_sale') }}" method="post" style="display:inline;">
+            <input type="hidden" name="item_id" value="{{ item_id }}">
+            <input type="hidden" name="sell_price" value="{{ sell_price }}">
+            <button type="submit">Yes</button>
+        </form>
+        <a href="{{ url_for('weapon_shop_bp.weapon_shop') }}" class="button-link">No</a>
+    </div>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Red Dragon Rising - View Stats{% endblock %}
+
+{% block content %}
+    <h1>View Your Stats</h1>
+    
+    <div class="collapse-section">
+        <h2>Character Stats</h2>
+        <ul>
+            <li><strong>Name:</strong> {{ character.name }}</li>
+            <li><strong>Experience:</strong> {{ character.xp }}</li>
+            <li><strong>Level:</strong> {{ character.level }}</li>
+            <li><strong>Rank:</strong> {{ character.rank }}</li>
+            <li><strong>Health:</strong> {{ character.hp }}/{{ character.max_hp }}</li>
+            <li><strong>Stamina:</strong> {{ character.stamina }}</li>
+            <li><strong>Offense:</strong> {{ character.offense }}</li>
+            <li><strong>Defense:</strong> {{ character.defense }}</li>
+            <li><strong>Gender:</strong> {{ character.gender }}</li>
+            <li><strong>Charm:</strong> {{ character.charm }}</li>
+        </ul>
+    </div>
+    
+    <div class="collapse-section">
+        <h2>Inventory</h2>
+        <ul>
+            <li><strong>Gold On Hand:</strong> {{ inventory.gold_hand }}</li>
+            <li><strong>Gold In Bank:</strong> {{ inventory.gold_bank }}</li>
+            <li><strong>Gems On Hand:</strong> {{ inventory.gems_hand }}</li>
+            <li><strong>Gems In Bank:</strong> {{ inventory.gems_bank }}</li>
+            <li><strong>Weapon:</strong> {{ inventory.weapon }}</li>
+            <li><strong>Armor:</strong> {{ inventory.armor }}</li>
+            <li><strong>Horse:</strong> {{ inventory.horse }}</li>
+            <li><strong>Healing Potions:</strong> {{ inventory.healing_potions }}</li>
+        </ul>
+    </div>
+    
+    <div class="button-group">
+        <a href="{{ url_for('town_square') }}" class="button-link">Back to Town Square</a>
+    </div>
+{% endblock %}

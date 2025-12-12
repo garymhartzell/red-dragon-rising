@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Red Dragon Rising - Character Created{% endblock %}
+
+{% block content %}
+    <h1>Welcome, {{ name }}!</h1>
+    <p>Your character has been successfully created.</p>
+    <div class="button-group">
+        <a href="{{ url_for('resume_game') }}" class="button-link">Start Playing</a>
+        <a href="{{ url_for('main_menu') }}" class="button-link">Return to Main Menu</a>
+    </div>
+{% endblock %}

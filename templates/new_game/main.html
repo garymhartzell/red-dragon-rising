@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}Red Dragon Rising - New Game{% endblock %}
+
+{% block content %}
+    <h1>Welcome to the Realm</h1>
+
+    <p>You wander into a foreign land with 50 gold to your name, looking for fame, glory, and riches. Oh, a hot meal and companionship would be nice, too!</p>
+
+    <h2>About You</h2>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <ul class="flashes">
+                {% for category, message in messages %}
+                    <li class="{{ category }}">{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+    <form action="{{ url_for('create_character') }}" method="post">
+        <p>
+            <label for="name">How will you be known to this world?</label><br>
+            <input type="text" id="name" name="name" required>
+        </p>
+        <p>
+            <label>Choose your gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male" checked>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+        </p>
+        <p>
+            Next, we need to know which specialty you wish to pursue. Your options are:
+            <ul>
+                <li><strong>Warrior</strong> - Warriors are tough, disciplined combatants who excel in direct confrontation and battlefield endurance.</li>
+                <li><strong>Assassin</strong> - Assassins are stealthy killers who strike from the shadows with lethal precision.</li>
+                <li><strong>Thief</strong> - Agile and cunning, thieves specialize in misdirection, speed, and opportunistic strikes.</li>
+            </ul>
+        </p>
+        <p>
+            <label for="specialty">Choose your specialty:</label><br>
+            <select id="specialty" name="specialty">
+                <option value="Warrior">Warrior</option>
+                <option value="Assassin">Assassin</option>
+                <option value="Thief">Thief</option>
+            </select>
+        </p>
+        <p>
+            <button type="submit">Create Character</button>
+        </p>
+    </form>
+{% endblock %}

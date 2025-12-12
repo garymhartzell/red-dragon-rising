@@ -1,0 +1,113 @@
+{
+	"weapons": {
+		"101": {
+			"item_id": 101,
+			"item_name": "Stick",
+			"boost": 2,
+			"level_unlocked": 1,
+			"cost": 50,
+			"sell_min": 20,
+			"sell_max": 30
+			},
+		"102": {
+			"item_id": 102,
+			"item_name": "Dagger",
+			"boost": 5,
+			"level_unlocked": 1,
+			"cost": 100,
+			"sell_min": 40,
+			"sell_max": 60
+			},
+		"103": {
+			"item_id": 103,
+			item_name": "Bone Club",
+			"boost": 10,
+			"level_unlocked": 1,
+			"cost": 200,
+			"sell_min": 80,
+			"sell_max": 120
+			},
+		"104": {
+			"item_id": 104,
+			"item_name": "Rusty Blade",
+			"boost": 15,
+			"level_unlocked": 1,
+			"cost": 400,
+			"sell_min": 160,
+			"sell_max": 240
+			},
+		"105": {
+			"item_id": 105,
+			"item_name": "Short Sword",
+			"boost": 20,
+			"level_unlocked": 5,
+			"cost": 600,
+			"sell_min": 240,
+			"sell_max": 360
+			},
+		"106": {
+			"item_id": 106,
+			"item_name": "Long Sword",
+			"boost": 25,
+			"level_unlocked": 5,
+			"cost": 900,
+			"sell_min": 360,
+			"sell_max": 540
+			}
+		},
+	"armor": {
+		"201": {
+			"item_id": 201,
+			"item_name": "Coat",
+			"boost": 1,
+			"level_unlocked": 1,
+			"cost": 40,
+			"sell_min": 16,
+			"sell_max": 24
+			},
+		"202": {
+			"item_id": 202,
+			"item_name": "Heavy Coat",
+			"boost": 3,
+			"level_unlocked": 1,
+			"cost": 75,
+			"sell_min", 30
+			"sell_max": 45
+			},
+		"203": {
+			"item_id": 203,
+			"item_name": "Wooden Shield",
+			"boost": 7,
+			"level_unlocked": 1,
+			"cost": 150,
+			"sell_min": 60,
+			"sell_max": 90
+			},
+		"204": {
+			"item_id": 204,
+			"item_name": "Leather Armor",
+			"boost": 10,
+			"cost": 300,
+			sell_min": 120,
+			"sell_max": 180
+			}
+		"205":
+			"item_id": 205,
+			"item_name": "Ember Shield",
+			"boost": 15,
+			"level_unlocked": 5,
+			"cost": 450,
+			sell_min": 180,
+			"sell_max", 270
+			},
+		"206":
+			"item_id": 206,
+			"item_name": "Stone Guard",
+			"boost": 20,
+			"level_unlocked": 5,
+			"cost": 675,
+			"sell_min": 270,
+			"sell_max": 405
+			}
+		}
+	}

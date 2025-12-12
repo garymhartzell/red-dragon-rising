@@ -22,3 +22,6 @@ Thumbs.db  # Windows
 
 # Ignore character data and other assets that shouldn't be tracked
 assets/character.json
+assets/*.csv
+.aider*
+.env

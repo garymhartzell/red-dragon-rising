@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Red Dragon Rising - Robinson Hills Town Square{% endblock %}
+
+{% block content %}
+    <h1>Robinson Hills Town Square</h1>
+    
+    <p>The cobbled streets hum with the rhythm of daily life. Merchants hawk their wares from stalls draped in rich fabrics, the scent of roasted meats mingling with the crisp bite of morning air. A towering fountain stands at the center—its worn stone whispering tales of ancient rulers and forgotten legends. The laughter of children mixes with the murmurs of traders, and somewhere, a bard plucks a lively tune.</p>
+    
+    <p>What would you like to do next?</p>
+
+    <div class="button-group">
+        <a href="{{ url_for('weapon_shop_bp.weapon_shop') }}" class="button-link">Mid-World Weaponry</a>
+        <a href="{{ url_for('bank_bp.bank_route') }}" class="button-link">Ye Old Bank</a>
+        <a href="{{ url_for('view_stats') }}" class="button-link">View Stats</a>
+        <a href="{{ url_for('main_menu') }}" class="button-link">Quit</a>
+    </div>
+{% endblock %}

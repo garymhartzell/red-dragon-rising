@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Red Dragon Rising - New Game Confirmation{% endblock %}
+
+{% block content %}
+    <h1>Warning!</h1>
+    <p>Starting a new game will erase existing character data!</p>
+    <div class="button-group">
+        <form action="{{ url_for('new_game_confirm') }}" method="post" style="display:inline;">
+            <button type="submit" class="button-link">Continue Anyway</button>
+        </form>
+        <a href="{{ url_for('main_menu') }}" class="button-link">Cancel</a>
+    </div>
+{% endblock %}

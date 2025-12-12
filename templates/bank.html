@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block title %}Red Dragon Rising - Ye Old Bank{% endblock %}
+
+{% block content %}
+    <h1>Ye Old Bank</h1>
+
+    <p>A sturdy stone building sits just off the Town Square, its heavy doors leading into a quiet space where fortunes are kept safe—if only temporarily. Inside, clerks scribble figures into ledgers, recording deposits, withdrawals, and the occasional plea for a loan. Stacks of coin rest behind iron bars, guarded not just by locks but by the ever-watchful eyes of the Bank’s staff.</p>
+    <p>Whether you’re securing your savings for the future or drawing funds for your next adventure, the Bank stands ready.</p>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <ul class="flashes">
+                {% for category, message in messages %}
+                    <li class="{{ category }}">{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+    <h2>Your Current Balances:</h2>
+    <ul>
+        <li><strong>Gold On Hand:</strong> {{ gold_on_hand }}</li>
+        <li><strong>Gold In Bank:</strong> {{ gold_in_bank }}</li>
+        <li><strong>Gems On Hand:</strong> {{ gems_on_hand }}</li>
+        <li><strong>Gems In Bank:</strong> {{ gems_in_bank }}</li>
+    </ul>
+
+    <div class="button-group">
+        <h3>Gold Transactions</h3>
+        <form action="{{ url_for('bank_bp.deposit_gold_route') }}" method="post" style="display:inline;">
+            <input type="number" name="amount" placeholder="Amount" min="1" max="{{ gold_on_hand }}" required>
+            <button type="submit">Deposit Gold</button>
+        </form>
+        <form action="{{ url_for('bank_bp.withdraw_gold_route') }}" method="post" style="display:inline;">
+            <input type="number" name="amount" placeholder="Amount" min="1" max="{{ gold_in_bank }}" required>
+            <button type="submit">Withdraw Gold</button>
+        </form>
+        <form action="{{ url_for('bank_bp.deposit_all_gold_route') }}" method="post" style="display:inline;">
+            <button type="submit">Deposit All Gold</button>
+        </form>
+        <form action="{{ url_for('bank_bp.withdraw_all_gold_route') }}" method="post" style="display:inline;">
+            <button type="submit">Withdraw All Gold</button>
+        </form>
+    </div>
+
+    <div class="button-group">
+        <h3>Gem Transactions</h3>
+        {% if gem_vault_status == 1 %}
+            <form action="{{ url_for('bank_bp.deposit_gems_route') }}" method="post" style="display:inline;">
+                <input type="number" name="amount" placeholder="Amount" min="1" max="{{ gems_on_hand }}" required>
+                <button type="submit">Deposit Gems</button>
+            </form>
+            <form action="{{ url_for('bank_bp.withdraw_gems_route') }}" method="post" style="display:inline;">
+                <input type="number" name="amount" placeholder="Amount" min="1" max="{{ gems_in_bank }}" required>
+                <button type="submit">Withdraw Gems</button>
+            </form>
+            <form action="{{ url_for('bank_bp.deposit_all_gems_route') }}" method="post" style="display:inline;">
+                <button type="submit">Deposit All Gems</button>
+            </form>
+            <form action="{{ url_for('bank_bp.withdraw_all_gems_route') }}" method="post" style="display:inline;">
+                <button type="submit">Withdraw All Gems</button>
+            </form>
+        {% else %}
+            <form action="{{ url_for('bank_bp.open_gem_vault_route') }}" method="post" style="display:inline;">
+                <button type="submit">Open a Gem Vault (Cost: 100 Gold)</button>
+            </form>
+        {% endif %}
+    </div>
+
+    <div class="button-group">
+        <a href="{{ url_for('view_stats') }}" class="button-link">View Stats</a>
+        <a href="{{ url_for('town_square') }}" class="button-link">Leave Bank</a>
+        <a href="{{ url_for('main_menu') }}" class="button-link">Quit</a>
+    </div>
+{% endblock %}
