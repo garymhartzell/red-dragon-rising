@@ -1,5 +1,6 @@
 # Ignore Python virtual environments
 rdr-env/
+rdr_linux/
 
 # Ignore PyWebIO session logs (if used)
 __pywebio_session__
