@@ -1,0 +1,21 @@
+{
+  "_comment": "Base stats before equipment/buffs, indexed by level.",
+  "by_level": {
+    "1":  {"max_hp": 25,  "offense": 10,  "defense": 10},
+    "2":  {"max_hp": 40,  "offense": 20,  "defense": 20},
+    "3":  {"max_hp": 55,  "offense": 30,  "defense": 30},
+    "4":  {"max_hp": 70,  "offense": 40,  "defense": 40},
+    "5":  {"max_hp": 90,  "offense": 55,  "defense": 55},
+    "6":  {"max_hp": 110, "offense": 70,  "defense": 70},
+    "7":  {"max_hp": 130, "offense": 85,  "defense": 85},
+    "8":  {"max_hp": 150, "offense": 100, "defense": 100},
+    "9":  {"max_hp": 190, "offense": 125, "defense": 125},
+    "10": {"max_hp": 230, "offense": 150, "defense": 150},
+    "11": {"max_hp": 270, "offense": 175, "defense": 175},
+    "12": {"max_hp": 310, "offense": 200, "defense": 200},
+    "13": {"max_hp": 385, "offense": 240, "defense": 240},
+    "14": {"max_hp": 460, "offense": 280, "defense": 280},
+    "15": {"max_hp": 580, "offense": 340, "defense": 340},
+    "16": {"max_hp": 700, "offense": 400, "defense": 400}
+  }
+}

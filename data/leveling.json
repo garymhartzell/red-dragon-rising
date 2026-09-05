@@ -1,0 +1,27 @@
+{
+  "_comment": "xp_to_next is the XP required to go from this level to level+1. avg_xp_per_enemy and avg_fights are reference numbers from design notes, not enforced by the engine.",
+  "levels": [
+    {"level": 1,  "xp_to_next": 250,   "avg_xp_per_enemy": 10,  "avg_fights": 25},
+    {"level": 2,  "xp_to_next": 750,   "avg_xp_per_enemy": 30,  "avg_fights": 25},
+    {"level": 3,  "xp_to_next": 1125,  "avg_xp_per_enemy": 45,  "avg_fights": 25},
+    {"level": 4,  "xp_to_next": 1500,  "avg_xp_per_enemy": 60,  "avg_fights": 25},
+    {"level": 5,  "xp_to_next": 2400,  "avg_xp_per_enemy": 80,  "avg_fights": 30},
+    {"level": 6,  "xp_to_next": 2880,  "avg_xp_per_enemy": 96,  "avg_fights": 30},
+    {"level": 7,  "xp_to_next": 3360,  "avg_xp_per_enemy": 112, "avg_fights": 30},
+    {"level": 8,  "xp_to_next": 5040,  "avg_xp_per_enemy": 144, "avg_fights": 35},
+    {"level": 9,  "xp_to_next": 5670,  "avg_xp_per_enemy": 162, "avg_fights": 35},
+    {"level": 10, "xp_to_next": 6300,  "avg_xp_per_enemy": 180, "avg_fights": 35},
+    {"level": 11, "xp_to_next": 6930,  "avg_xp_per_enemy": 198, "avg_fights": 35},
+    {"level": 12, "xp_to_next": 10560, "avg_xp_per_enemy": 264, "avg_fights": 40},
+    {"level": 13, "xp_to_next": 11440, "avg_xp_per_enemy": 286, "avg_fights": 40},
+    {"level": 14, "xp_to_next": 12320, "avg_xp_per_enemy": 308, "avg_fights": 40},
+    {"level": 15, "xp_to_next": 13200, "avg_xp_per_enemy": 330, "avg_fights": 40}
+  ],
+  "ranks": [
+    {"name": "Apprentice", "levels": [1, 4],  "loss_pct_on_death": 0.10},
+    {"name": "Squire",     "levels": [5, 8],  "loss_pct_on_death": 0.12},
+    {"name": "Martial",    "levels": [9, 12], "loss_pct_on_death": 0.15},
+    {"name": "Knight",     "levels": [13, 16],"loss_pct_on_death": 0.20},
+    {"name": "Hero",       "levels": [17, 17],"loss_pct_on_death": 0.0}
+  ]
+}

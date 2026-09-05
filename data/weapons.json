@@ -1,0 +1,28 @@
+{
+  "_comment": "sell_range is [min, max] gold on sellback. level_unlocked is the minimum player level required to buy.",
+  "weapons": [
+    {"name": "Fists",          "offense_boost": 0,   "level_unlocked": 1,  "cost": null,  "sell_range": null},
+    {"name": "Stick",          "offense_boost": 2,   "level_unlocked": 1,  "cost": 50,    "sell_range": [20, 30]},
+    {"name": "Dagger",         "offense_boost": 5,   "level_unlocked": 1,  "cost": 100,   "sell_range": [40, 60]},
+    {"name": "Bone Club",      "offense_boost": 10,  "level_unlocked": 1,  "cost": 200,   "sell_range": [80, 120]},
+    {"name": "Rusty Blade",    "offense_boost": 15,  "level_unlocked": 1,  "cost": 400,   "sell_range": [160, 240]},
+    {"name": "Short Sword",    "offense_boost": 20,  "level_unlocked": 5,  "cost": 600,   "sell_range": [240, 360]},
+    {"name": "Long Sword",     "offense_boost": 25,  "level_unlocked": 5,  "cost": 900,   "sell_range": [360, 540]},
+    {"name": "Huge Axe",       "offense_boost": 30,  "level_unlocked": 5,  "cost": 1300,  "sell_range": [520, 780]},
+    {"name": "Flamebrand",     "offense_boost": 35,  "level_unlocked": 5,  "cost": 1800,  "sell_range": [720, 1080]},
+    {"name": "Arcane Staff",   "offense_boost": 40,  "level_unlocked": 9,  "cost": 2400,  "sell_range": [960, 1440]},
+    {"name": "Phantom Blade",  "offense_boost": 45,  "level_unlocked": 9,  "cost": 3100,  "sell_range": [1240, 1860]},
+    {"name": "Bone Saw",       "offense_boost": 50,  "level_unlocked": 9,  "cost": 3900,  "sell_range": [1560, 2360]},
+    {"name": "Shadowfang",     "offense_boost": 55,  "level_unlocked": 9,  "cost": 4800,  "sell_range": [1920, 2880]},
+    {"name": "Sapphire Blade", "offense_boost": 60,  "level_unlocked": 9,  "cost": 5800,  "sell_range": [2320, 3480]},
+    {"name": "Iron Flail",     "offense_boost": 65,  "level_unlocked": 13, "cost": 6900,  "sell_range": [2760, 4140]},
+    {"name": "Spear of Gold",  "offense_boost": 70,  "level_unlocked": 13, "cost": 8100,  "sell_range": [3240, 4860]},
+    {"name": "Crystal Shard",  "offense_boost": 75,  "level_unlocked": 13, "cost": 9400,  "sell_range": [3760, 5640]},
+    {"name": "War Cleaver",    "offense_boost": 80,  "level_unlocked": 13, "cost": 10800, "sell_range": [4320, 6480]},
+    {"name": "Obsidian Blade", "offense_boost": 85,  "level_unlocked": 13, "cost": 12300, "sell_range": [4920, 7380]},
+    {"name": "Blood Sword",    "offense_boost": 90,  "level_unlocked": 13, "cost": 14000, "sell_range": [5600, 8400]},
+    {"name": "Thunder Hammer", "offense_boost": 100, "level_unlocked": 16, "cost": 16000, "sell_range": [8000, 12000], "_note": "level_unlocked was blank in source outline; assumed 16 based on table position, confirm with design"},
+    {"name": "Dragonfang",     "offense_boost": 110, "level_unlocked": 16, "cost": 18000, "sell_range": [9000, 13500]},
+    {"name": "Diamond Sword",  "offense_boost": 120, "level_unlocked": 16, "cost": 20000, "sell_range": [10000, 15000]}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "_comment": "sell_range is [min, max] gold on sellback. level_unlocked is the minimum player level required to buy.",
+  "armor": [
+    {"name": "T-shirt",              "defense_boost": 0,   "level_unlocked": 1,  "cost": null,  "sell_range": null},
+    {"name": "Coat",                 "defense_boost": 1,   "level_unlocked": 1,  "cost": 40,    "sell_range": [16, 24]},
+    {"name": "Heavy Coat",           "defense_boost": 3,   "level_unlocked": 1,  "cost": 75,    "sell_range": [30, 45]},
+    {"name": "Wooden Shield",        "defense_boost": 7,   "level_unlocked": 1,  "cost": 150,   "sell_range": [60, 90]},
+    {"name": "Leather Armor",        "defense_boost": 10,  "level_unlocked": 1,  "cost": 300,   "sell_range": [120, 180]},
+    {"name": "Ember Shield",         "defense_boost": 15,  "level_unlocked": 5,  "cost": 450,   "sell_range": [180, 270]},
+    {"name": "Stone Guard",          "defense_boost": 20,  "level_unlocked": 5,  "cost": 675,   "sell_range": [270, 405]},
+    {"name": "Venom Guard",          "defense_boost": 25,  "level_unlocked": 5,  "cost": 1000,  "sell_range": [400, 600]},
+    {"name": "Bronze Shield",        "defense_boost": 30,  "level_unlocked": 5,  "cost": 1500,  "sell_range": [600, 900]},
+    {"name": "Iron Shield",          "defense_boost": 35,  "level_unlocked": 9,  "cost": 2000,  "sell_range": [800, 1200]},
+    {"name": "Shadow Robe",          "defense_boost": 40,  "level_unlocked": 9,  "cost": 2600,  "sell_range": [1040, 1560]},
+    {"name": "Bronze Armor",         "defense_boost": 45,  "level_unlocked": 9,  "cost": 3300,  "sell_range": [1320, 1980]},
+    {"name": "Iron Armor",           "defense_boost": 50,  "level_unlocked": 9,  "cost": 4100,  "sell_range": [1640, 2460]},
+    {"name": "Graphite Armor",       "defense_boost": 55,  "level_unlocked": 9,  "cost": 5000,  "sell_range": [2000, 3000]},
+    {"name": "Chainmail Vest",       "defense_boost": 60,  "level_unlocked": 13, "cost": 6000,  "sell_range": [2400, 3600]},
+    {"name": "Mythril Mail",         "defense_boost": 65,  "level_unlocked": 13, "cost": 7100,  "sell_range": [2840, 4260]},
+    {"name": "Rune-Etched Armor",    "defense_boost": 70,  "level_unlocked": 13, "cost": 8300,  "sell_range": [3320, 4980]},
+    {"name": "Obsidian Plate",       "defense_boost": 75,  "level_unlocked": 13, "cost": 9600,  "sell_range": [3840, 5760]},
+    {"name": "Golden Armor",         "defense_boost": 80,  "level_unlocked": 13, "cost": 11000, "sell_range": [4400, 6600]},
+    {"name": "Blood Armor",          "defense_boost": 85,  "level_unlocked": 13, "cost": 12500, "sell_range": [5000, 7500]},
+    {"name": "Celestial Protection", "defense_boost": 95,  "level_unlocked": 16, "cost": 14000, "sell_range": [5600, 8400]},
+    {"name": "Dragonscale Vest",     "defense_boost": 105, "level_unlocked": 16, "cost": 16000, "sell_range": [6400, 9600]},
+    {"name": "Diamond Armor",        "defense_boost": 115, "level_unlocked": 16, "cost": 18000, "sell_range": [7200, 10800]}
+  ]
+}
